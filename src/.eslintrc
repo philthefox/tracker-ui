@@ -1,0 +1,10 @@
+{
+    "extends": "airbnb",
+    "env": {
+        "browser": true
+    },
+    "rules": {
+        "import/extensions": [ "error", "always", { "ignorePackages": true }], // exception for including extensions in import statements
+        "react/prop-types": "off" // should be enabled in own application
+    }
+}

@@ -1,0 +1,10 @@
+{
+    "extends": "airbnb-base",
+    "env": {
+        "node": true
+    },
+    // "ignorePatterns": ["public"],
+    "rules": {
+        "no-console": "off"
+    }
+}
