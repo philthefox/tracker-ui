@@ -49,5 +49,5 @@
     "webpack-hot-middleware": "^2.25.0"
   },
   "dev-all": "rm dist/* && npm run watch-server-hmr & sleep 5 && npm start",
-  "heroku-postbuild": "npm run compile && ln -fs ../node_modules/bootstrap/dist  public/bootstrap"
+  "heroku-postbuild": "npm run compile"
 }
