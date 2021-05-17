@@ -1,5 +1,6 @@
 
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function IssueRow({ issue }) { // stateless component
   return (
@@ -11,7 +12,7 @@ function IssueRow({ issue }) { // stateless component
       <td>{issue.effort}</td>
       <td>{issue.due ? issue.due.toDateString() : ''}</td>
       <td>{issue.title}</td>
-      <td><a href={`/#/edit/${issue.id}`}>Edit</a></td>
+      <td><Link to={`/edit/${issue.id}`}>Edit</Link></td>
     </tr>
   );
 }
